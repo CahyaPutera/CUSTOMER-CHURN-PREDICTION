@@ -10,9 +10,6 @@ app = Flask(__name__)
 # Model
 model = joblib.load('LRG_model')
 
-# Dataframe
-df = pd.read_csv('dataset/Telco-Customer-Churn.csv')
-
 # Root
 @app.route('/')
 def route_root():
