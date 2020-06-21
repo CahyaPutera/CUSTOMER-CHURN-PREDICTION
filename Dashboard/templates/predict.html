@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<body>
+    
+<br>
+    <h1> <center> PREDICT </center> </h1>
+<br>
+    <form method="POST" action="/predict">
+    <center>
+    
+        <input type="text" name="contract" placeholder="Contract Monthly">
+        <input type="text" name="security" placeholder="Online Security">
+        <input type="text" name="support" placeholder="Tech Support">
+        <input type="text" name="fiber" placeholder="Fiber Optic">
+        <input type="text" name="check" placeholder="Electronic Check">
+        <input type="text" name="backup" placeholder="Online Backup">
+        <input type="text" name="protection" placeholder="Device Protection">
+        <input type="text" name="paperless" placeholder="Paperless">
+        <input type="text" name="contract2year" placeholder="Contract Two Year">
+        <input type="text" name="internet" placeholder="Internet Service">
+        <br>
+        <br>
+        <input type="submit" value="Start Prediction"> 
+        <input type="reset" value="Reset Submission"> 
+    </center>  
+    
+    </form>
+    <br>
+    <br>
+
+    <center> 
+    <h3> <i>{{ results }}</i> </h3>
+    </center>
+</body>
+</html>
+
+{% endblock %}
