@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+
+{% block title%} FLASK Project - Predict {% endblock %}
+
+{% block content %}
+<body>
+<br>
+    <h3 style="background-color:white"> <center> CUSTOMER'S CHURN PREDICTION </center> </h3>
+<br>
+    <form method="POST" action="/predict">
+
+    <center>
+        <label style="background-color:white" for="contract"> | Using Monthly Contract     |</label>
+        <select id="contract" name="contract">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+    </center>
+
+    <center>
+        <label style="background-color:white" for="security"> | Using No Online Security   | </label>
+        <select id="security" name="security">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+    </center>
+
+    <center>
+        <label style="background-color:white" for="support"> | Using No Technical Support | </label>
+        <select id="support" name="support">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+    </center>
+
+    <center>
+        <label style="background-color:white" for="fiber"> | Using Fiber Optic Internet | </label>
+        <select id="fiber" name="fiber">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+    </center>
+
+    <center>
+        <label style="background-color:white" for="check"> | Using Electronic Check     | </label>
+        <select id="check" name="check">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+    </center>
+
+    <center>
+        <label style="background-color:white" for="backup"> | Using No Online Backup     | </label>
+        <select id="backup" name="backup">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>   
+    </center>
+
+    <center>
+        <label style="background-color:white" for="protection"> | Using No Device Protection | </label>
+        <select id="protection" name="protection">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>    
+    </center>
+
+    <center>    
+        <label style="background-color:white" for="paperless"> | Using Paperless Billing    |</label>
+        <select id="paperless" name="paperless">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+
+    <center>
+        <label style="background-color:white" for="contract2y"> | Using Two Year Contract     |</label>
+        <select id="contract2y" name="contract2y">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select>
+    </center>
+
+    <center>
+        <label style="background-color:white" for="charges"> | Input Monthly Charges |</label>
+        <input type="number" id="charges" name="charges" min="18.25" max="118.75" value = "18.25">
+    </center>
+
+    <center>
+        <label style="background-color:white" for="tenure"> | Input Tenure (max. 72) |</label>
+        <input type="number" id="tenure" name="tenure" min="0" max="72" value = "0">
+    </center>
+    
+    <br>
+    <br>
+    <center>
+        <input type="submit" value="Start Prediction"> 
+        <button type="reset" onclick="document.location.reload()">Reset Submission</button> 
+    </center>  
+
+    
+    </form>
+    <br>
+
+    <center> 
+    <h4 style="background-color:white"> <i>{{ results }}</i> </h4>
+    </center>
+    <br>
+    <br>
+</body>
+</html>
+
+{% endblock %}
