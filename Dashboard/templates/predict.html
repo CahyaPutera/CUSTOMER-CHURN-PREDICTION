@@ -5,7 +5,7 @@
 {% block content %}
 <body>
 <br>
-    <h3 style="background-color:white"> <center> CUSTOMER'S CHURN PREDICTION </center> </h3>
+    <h3 style="background-color:white"> <center> CUSTOMER CHURN PREDICTION </center> </h3>
 <br>
     <form method="POST" action="/predict">
 
@@ -18,18 +18,18 @@
     </center>
 
     <center>
-        <label style="background-color:white" for="security"> | Using No Online Security   | </label>
+        <label style="background-color:white" for="security"> | Using Online Security   | </label>
         <select id="security" name="security">
-            <option value="1">Yes</option>
-            <option value="0">No</option>
+            <option value="1">No</option>
+            <option value="0">Yes</option>
         </select>
     </center>
 
     <center>
-        <label style="background-color:white" for="support"> | Using No Technical Support | </label>
+        <label style="background-color:white" for="support"> | Using Technical Support | </label>
         <select id="support" name="support">
-            <option value="1">Yes</option>
-            <option value="0">No</option>
+            <option value="1">No</option>
+            <option value="0">Yes</option>
         </select>
     </center>
 
@@ -50,18 +50,18 @@
     </center>
 
     <center>
-        <label style="background-color:white" for="backup"> | Using No Online Backup     | </label>
+        <label style="background-color:white" for="backup"> | Using Online Backup     | </label>
         <select id="backup" name="backup">
-            <option value="1">Yes</option>
-            <option value="0">No</option>
+            <option value="1">No</option>
+            <option value="0">Yes</option>
         </select>   
     </center>
 
     <center>
-        <label style="background-color:white" for="protection"> | Using No Device Protection | </label>
+        <label style="background-color:white" for="protection"> | Using Device Protection | </label>
         <select id="protection" name="protection">
-            <option value="1">Yes</option>
-            <option value="0">No</option>
+            <option value="1">No</option>
+            <option value="0">Yes</option>
         </select>    
     </center>
 
