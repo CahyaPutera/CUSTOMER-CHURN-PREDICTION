@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% block title%} FLASK Project - Visualization {% endblock %}
+
+{%block content%}
+<br>
+    <center>
+        <h3 style="background-color:white"> <center> CUSTOMER CHURN VISUALIZATION </center> </h3>
+    </center>
+    <br>
+
+    <center>
+    <div class="accordion" id="accordionExample">
+
+        <div style = "background-color:white" class="card" style="max-width: 1250px">
+          <div class="card-header bg-info" id="heading1">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block  text-white text-center collapsed" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                Target Features
+              </button>
+            </h2>
+          </div>     
+          <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordionExample">
+            <div class="card-body">
+            <center>
+            <img src="http://127.0.0.1:5000/static/ch-tgt1.png" class="img-fluid" alt="Responsive image">
+            <br>
+            <br>
+            <img src="http://127.0.0.1:5000/static/ch-tgt2.png" class="img-fluid" alt="Responsive image">
+            <br>
+            <br>
+            <img src="http://127.0.0.1:5000/static/ch-tgt3.png" class="img-fluid" alt="Responsive image">
+            <br>
+            <br>
+            </div>
+          </div>
+        </div>
+
+        <div style = "background-color:white" class="card" style="max-width: 1250px">
+          <div class="card-header bg-info" id="heading3">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-white text-center collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                Categorical Features to Target
+              </button>
+            </h2>
+          </div>
+          <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample">
+            <div class="card-body">
+            <center>
+            <img src="http://127.0.0.1:5000/static/ch-cat1-tgt.png" class="img-fluid" alt="Responsive image">
+              <br>
+              <img src="http://127.0.0.1:5000/static/ch-cat2-tgt.png" class="img-fluid" alt="Responsive image">
+              <br>
+              <img src="http://127.0.0.1:5000/static/ch-cat3-tgt.png" class="img-fluid" alt="Responsive image">
+              <br>
+              <img src="http://127.0.0.1:5000/static/ch-cat4-tgt.png" class="img-fluid" alt="Responsive image">
+              <br>
+              <img src="http://127.0.0.1:5000/static/ch-cat5-tgt.png" class="img-fluid" alt="Responsive image">
+              <br>
+              <br>
+            </center>
+            </div>
+          </div>
+
+        <div style = "background-color:white" class="card" style="max-width: 1250px">
+          <div class="card-header bg-info" id="heading4">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-white text-center collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                Continous Features to Target
+              </button>
+            </h2>
+          </div>
+          <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
+            <div class="card-body">
+            <center>
+            <img src="http://127.0.0.1:5000/static/ch-con1-tgt.png" class="img-fluid" alt="Responsive image">
+              <br>
+              <img src="http://127.0.0.1:5000/static/ch-con2-tgt.png" class="img-fluid" alt="Responsive image">
+              <br>
+              <img src="http://127.0.0.1:5000/static/ch-con3-tgt.png" class="img-fluid" alt="Responsive image">
+              <br>
+              <br>
+            </center>
+            </div>
+          </div>
+        </div>
+<br>
+    </center>
+
+{% endblock %}
